@@ -72,4 +72,5 @@ input[type="date"]::placeholder {
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ccc;
+    gap: 7px;
 }
