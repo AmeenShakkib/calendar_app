@@ -140,6 +140,7 @@ const AddBirthday = () => {
     return (
         <div>
             <Navbar />
+            <div style={{ display: 'flex', flexFlow: 'column wrap', alignItems: 'center', justifyContent: 'center' ,margin:'10px' }}>
             <div className='content'>
                 <div className='addBirthday'>
                     <h1>Add a Birthday :</h1>
@@ -183,6 +184,7 @@ const AddBirthday = () => {
             </br>
             <div className="closest_birthday">
                 <button onClick={find_closest_birthday}>Find the closest Birthday</button>
+            </div>
             </div>
         </div>
     );

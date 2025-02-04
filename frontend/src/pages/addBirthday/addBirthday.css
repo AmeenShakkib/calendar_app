@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Peace+Sans&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap');
+
 .content {
     display: flex;
     flex-direction: column;
@@ -8,6 +9,7 @@
     overflow-y: auto; /* Allows scrolling if content overflows */
     height: 100vh;
     padding-bottom: 20px; /* Optional padding at the bottom */
+    margin:5px;
 }
 
 .addBirthday {
