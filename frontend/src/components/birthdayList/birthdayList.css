@@ -1,0 +1,14 @@
+.birthdayList{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.entry{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}

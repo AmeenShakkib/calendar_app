@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Peace+Sans&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap');
+
+h1{
+    font-family: peace sans;
+    color:#ffffff;
+    }
+h2{
+  font-family: glacial indifference;
+  color:#ffffff;
+    } 
+button{
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #151750;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+    }
+      
+button:hover {
+  background-color: #C2CBF8;
+  box-shadow: #151750 0 -6px 8px inset;
+  transform: scale(1.025);
+    }
+      
+button:active {
+  transform: scale(1.025);
+    }
+      
+@media (min-width: 768px) {
+  button{
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+        }
+    }
