@@ -22,7 +22,7 @@ const AddBirthday = () => {
         else{    
             const fetchData = async () => {
                 try {
-                    const response = await axios.get('http://localhost:5000/api/birthdays/get_birthdays');
+                    const response = await axios.get('https://calendar-app-1-alak.onrender.com/api/birthdays/get_birthdays');
                     setPeoples(response.data);
                 } catch (error) {
                     console.error('Error fetching data:', error);
@@ -35,12 +35,12 @@ const AddBirthday = () => {
     const handleEdit = (id) => {
         const editBirthday = async (id, new_dob) => {
             try {
-                const response = await axios.put(`http://localhost:5000/api/birthdays/update/${id}`, {
+                const response = await axios.put(`https://calendar-app-1-alak.onrender.com/api/birthdays/update/${id}`, {
                     dob: new_dob,
                 });
                 if (response.status === 200) {
                     alert('Birthday updated successfully.');
-                    const response = await axios.get('http://localhost:5000/api/birthdays/get_birthdays');
+                    const response = await axios.get('https://calendar-app-1-alak.onrender.com/api/birthdays/get_birthdays');
                     setPeoples(response.data);
                 } else {
                     alert('Failed to update birthday.');
@@ -58,7 +58,7 @@ const AddBirthday = () => {
 
     const deletebirthday = async (id) => {
         try {
-            const response = await axios.delete(`http://localhost:5000/api/birthdays/delete/${id}`);
+            const response = await axios.delete(`https://calendar-app-1-alak.onrender.com/api/birthdays/delete/${id}`);
             if (response.status === 200) {
                 setPeoples(peoples.filter(people => people._id !== id));
                 alert('Birthday deleted successfully.');
@@ -77,7 +77,7 @@ const AddBirthday = () => {
             return;
         }
         try {
-            const response = await fetch('http://localhost:5000/api/birthdays/add', {
+            const response = await fetch('https://calendar-app-1-alak.onrender.com/api/birthdays/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -127,7 +127,7 @@ const AddBirthday = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/birthdays/get_birthdays');
+                const response = await axios.get('https://calendar-app-1-alak.onrender.com/api/birthdays/get_birthdays');
                 setPeoples(response.data);
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -157,7 +157,7 @@ const AddBirthday = () => {
                     />
                     <button onClick={async () => {
                         await handleAddBirthday();
-                        const response = await axios.get('http://localhost:5000/api/birthdays/get_birthdays');
+                        const response = await axios.get('https://calendar-app-1-alak.onrender.com/api/birthdays/get_birthdays');
                         setPeoples(response.data);
                     }}>Add</button>
                 </div>
